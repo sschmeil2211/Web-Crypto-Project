@@ -68,26 +68,3 @@
   font-size: 14px;
   border-radius: 10px;
 }
-
-
-.dropdown {
-  position: absolute; /* Posicionar el dropdown */
-  right: 0; /* Alinear a la derecha */
-  margin-top: 0.5rem; /* Espacio entre el navbar y el dropdown */
-  background-color: rgba(52, 52, 52, 1); /* Color de fondo */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-  z-index: 50; /* Asegurarse de que esté por encima de otros elementos */
-}
-
-/* Estilo para los enlaces del dropdown */
-.dropdown a {
-  display: block; /* Hacer que cada enlace ocupe una línea */
-  padding: 10px 15px; /* Espaciado */
-  color: white; /* Color del texto */
-  text-decoration: none; /* Sin subrayado */
-}
-
-.dropdown a:hover {
-  background-color: rgba(87, 0, 123, 1); /* Color de fondo en hover */
-}

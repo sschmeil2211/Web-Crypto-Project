@@ -8,34 +8,37 @@
     url('./assets/Fonts/gothamrnd_lightitalic.otf') format('opentype'),
     url('./assets/Fonts/gothamrnd_medium.otf') format('opentype'),
     url('./assets/Fonts/gothamrnd_mediumitalic.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham-Rounded';
-  src: url('./assets/Fonts/gothamrnd_medium.otf') format('opentype');
-  font-style: normal; 
+  font-family: 'GothamBook';
+  src: url('./assets/Fonts/gothamrnd_book.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamBold';
+  src: url('./assets/Fonts/gothamrnd_bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamLight';
+  src: url('./assets/Fonts/gothamrnd_light.otf') format('opentype');
 }
 
 body {
   margin: 0;
-  font-family: 'Gotham-Rounded', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'GothamBook', sans-serif;
   background-color: rgba(40, 40, 40, 1);
+  min-width: 1330px;
+  overflow-x: auto; 
 }
 
 button{
-  font-family: 'Gotham-Rounded', sans-serif;
+  font-family: 'GothamBook', sans-serif;
 }
 
-h1, h2, h3 {
-  font-weight: normal; 
-}
-
-p {
-  font-weight: 300; 
+p{
+  font-family: 'GothamLight', sans-serif;
 }
 
 code {

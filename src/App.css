@@ -1,3 +1,281 @@
 .App {
   text-align: center;
 }
+
+/* GLOBALS */
+
+
+.button {
+  border-radius: 4px; 
+  background: linear-gradient(
+    30deg,
+    rgba(87, 0, 123, 1), 
+    rgba(247, 102, 128, 1) 
+  );
+  color: white; 
+  padding: 0.5rem 1.5rem;
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+  margin-left:20px;
+}
+
+.button:hover {
+  opacity: 0.9; 
+}
+
+
+/* NavBar SECCION */
+
+
+.navbar {
+  position: fixed;
+  background-color: rgba(52, 52, 52, 1);
+  border-radius: 8px;
+  top: 20px;     
+  left: 50%;     
+  transform: translateX(-50%); 
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 1050px;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.logo-title { 
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 55px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.title {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+/* Home SECCION */
+
+
+.home-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 120px;
+  margin-bottom: 20px;
+ 
+}
+
+.text-container {
+  text-align: horizontal;
+  color: aliceblue;
+  font-size: 40px;
+  z-index: 1;
+}
+
+.boldCB{
+  background: linear-gradient(
+      360deg,
+      rgba(87, 0, 123, 1), 
+      rgba(222, 67, 150, 1)
+    );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'GothamBold', sans-serif;
+}
+
+.phone-container{
+  position: relative;
+  margin-top: 20px;
+}
+
+.circle-phone{
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: linear-gradient(40deg, rgba(87, 0, 123, 1) 0%, rgba(247, 102, 128, 1) 100%);
+  position: absolute;
+  top: 50px;
+  right: -77px;
+  z-index: -1
+}
+
+.phone-image{
+  width: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.store-button {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.store-button img {
+  height: 50px;
+  display: block;
+}
+
+.store-button:hover {
+  transform: scale(1.05);
+}
+
+.circle {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .circle {
+    width: 0px; 
+    height: 0px; 
+  }
+}
+
+/* Carrousel SECCION */
+
+.carrousel-container {
+  position: relative;
+  margin-top: 100px;
+  overflow: hidden; 
+}
+
+
+.half-circle {
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1300px;
+  width: 2300px;
+  background: linear-gradient(180deg, 
+                                  rgba(144, 31, 192, 0.753) 0%,  
+                                  rgba(247, 102, 128, 1) 30%, 
+                                  rgba(243, 127, 148, 0) 70%); 
+  border-radius: 50%;
+}
+
+.carrousel-upper-text {
+  max-height: 360px;
+  position: relative;
+  padding: 10%;
+  margin-bottom: 60px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  margin-top: 10px;
+}
+
+.item2 {
+  padding: 10px;
+  color: aliceblue;
+}
+
+.subtitle-container {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 15px;
+  max-width: 490px;
+  margin-left: 200px;
+  font-size: 40px;
+  
+}
+
+.p-item{
+  font-size: 30px;
+}
+
+.p-item-bottom{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  font-size: 25px;
+  color: aliceblue;
+  position: relative;
+}
+
+/* Resposive SECCION */
+
+@media (max-width: 1700px) {
+  
+  .subtitle-container {
+    margin-left: 50px;
+    max-width: 100%;
+    font-size: 36px;
+   
+  }
+  .p-item {
+    font-size: 25px;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .subtitle-container {
+    font-size: 32px;
+    line-height: 1.1;
+    max-width: 90%;
+  }
+  .p-item {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carrousel-upper-text {
+    padding: 5%;
+  }
+  .subtitle-container {
+    font-size: 28px;
+    line-height: 1.1;
+    max-width: 95%;
+  }
+  .p-item {
+    font-size: 18px;
+  }
+}

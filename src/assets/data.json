@@ -1,0 +1,43 @@
+[
+    {
+      "id": "bitcoin",
+      "name": "Bitcoin",
+      "logo": "https://cryptologos.cc/logos/bitcoin-btc-logo.png"
+      
+    },
+    {
+      "id": "ethereum",
+      "name": "ETHER",
+      "logo": "https://cryptologos.cc/logos/ethereum-eth-logo.png"
+    },
+    {
+      "id": "litecoin",
+      "name": "Litecoin",
+      "logo": "https://cryptologos.cc/logos/litecoin-ltc-logo.png"
+    },
+    {
+        "id": "solana",
+        "name": "Solana",
+        "logo": "https://cryptologos.cc/logos/solana-sol-logo.png"
+      },
+      {
+        "id": "algorand",
+        "name": "Algorand",
+        "logo": "https://cryptologos.cc/logos/algorand-algo-logo.png"
+      },
+      {
+        "id": "ripple",
+        "name": "XRP",
+        "logo": "https://cryptologos.cc/logos/xrp-xrp-logo.png"
+      },
+      {
+        "id": "decentraland",
+        "name": "Decentraland",
+        "logo": "https://cryptologos.cc/logos/decentraland-mana-logo.png"
+      },
+      {
+        "id": "dogecoin",
+        "name": "Dogecoin",
+        "logo": "https://cryptologos.cc/logos/dogecoin-doge-logo.png"
+      }
+  ]

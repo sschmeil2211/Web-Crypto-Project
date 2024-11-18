@@ -5,6 +5,7 @@ import appStoreLogo from '../assets/Images/appStoreLogo.png'
 import googlePlayLogo from '../assets/Images/googlePlayLogo.png'
 
 
+
 const Home: React.FC = () => {
   return (
     <div className='home-container'>
@@ -36,7 +37,9 @@ const Home: React.FC = () => {
       <div className='circle-phone'></div>
       <img className="phone-image" src={phone} alt="Celular"></img>
     </div>
-</div>
+  </div>
+
+
 );
 };
 

@@ -1,8 +1,9 @@
 import React from "react";
 import card from "../assets/Images/card.png";
 import InfoItem from "../components/InfoItem";
+import { Link } from "react-router-dom";
 
-const ComponentName: React.FC = () => {
+const Card: React.FC = () => {
   return (
     <div className="seccion-tarjeta">
 
@@ -60,10 +61,14 @@ const ComponentName: React.FC = () => {
    
       <div className="texto-inferior">
         <p>Compra, paga, retira. Fácil y rápido.</p>
-        <button type="button" className="btn btn">Activa tu tarjeta</button>
+        <Link to= '/login'>
+        <button type="button" >
+          Activa tu tarjeta
+          </button>
+        </Link>
       </div>
     </div>
   );
 };
 
-export default ComponentName;
+export default Card;

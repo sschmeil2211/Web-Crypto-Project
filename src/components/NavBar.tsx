@@ -1,8 +1,17 @@
 import React from "react";
 import logo from '../assets/Images/logo.png'
 import { Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../redux/store";
+import { logout } from "../redux/authSlice";
 
 const NavBar: React.FC = () => {
+    const isLoggedIn = useSelector ((state: RootState) => state.auth.isLoggedIn);
+    const dispatch = useDispatch();
+
+    const handleLogout = () => {
+      dispatch(logout());
+    };
 
     return (
       <nav className="navbar">
@@ -11,7 +20,17 @@ const NavBar: React.FC = () => {
           <span className="title">Cripto Web</span>
         </div>
         <div className="nav-links">
-                <Link to="/">
+                {isLoggedIn ? (
+                  <><a href="#">Transacciones</a>
+                  <a href="#">Inversiones</a>
+                  <a href="#">Billetera</a>
+                  <a href="#">Configuraciones</a>
+                  <button onClick={handleLogout} className="button">
+              Salir
+            </button></>
+                 ):(
+                <>
+                 <Link to="/">
                   Inicio
                 </Link>
                 <Link to="/card">
@@ -21,7 +40,11 @@ const NavBar: React.FC = () => {
                   Nosotros
                 </Link>
                 <a href="#">Dashboard</a>
-                <button className="button">Ingresar</button>
+                <Link to="/login">
+                <button className="button"> Ingresar</button>
+                </Link>
+                </>
+                 )}
         </div>       
            
       </nav>

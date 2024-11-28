@@ -1,7 +1,7 @@
 import React from "react";
 import CarouselC from "../components/CarouselC";
 
-const CarouselF: React.FC = () => {
+const CarouselV: React.FC = () => {
   return (
     <div className="carousel-container">
         <div className="half-circle"></div>
@@ -33,4 +33,4 @@ const CarouselF: React.FC = () => {
   );
 };
 
-export default CarouselF;
+export default CarouselV;

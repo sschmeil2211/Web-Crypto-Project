@@ -13,6 +13,7 @@
     "@types/react": "^18.3.8",
     "@types/react-dom": "^18.3.0",
     "axios": "^1.7.7",
+    "gasp": "^0.0.2",
     "qrcode.react": "^4.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -45,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/gsap": "^1.20.2",
+    "gsap": "^3.12.5"
   }
 }

@@ -15,7 +15,7 @@ const QRGenerator: React.FC = () => {
       >
         <QRCodeSVG
           value={url}
-          size={200}    // Tamaño del QR
+          size={150}    // Tamaño del QR
           fgColor="#000000"
           bgColor="#ffffff"
         />

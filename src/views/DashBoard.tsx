@@ -15,7 +15,7 @@ const ScrollEffect: React.FC = () => {
   const [isAtEnd, setIsAtEnd] = useState<boolean>(false); 
 
   const scrollFactor = 0.1; 
-  const sectionThresholds = [0, 200, 1000, 1800];
+  const sectionThresholds = [0, 250, 1090, 1850];
 
   useEffect(() => {
     const handleScroll = () => {

@@ -10,7 +10,8 @@ import Card from './views/Card';
 import Carousel from './views/CarouselV';
 import AboutUs from './views/AboutUs';
 import Footer from './components/Footer';
-
+import Login from './views/Login';
+import Dashboard from './views/DashBoard'
 
 
 function App() {
@@ -34,7 +35,15 @@ function App() {
         <Routes>
           <Route path='/about-us' element={<AboutUs />} />
         </Routes>
-          
+
+        <Routes>
+          <Route path='/login' element={<Login />} />
+        </Routes>
+
+        <Routes>
+          <Route path='/dashboard' element={<Dashboard/>}/>
+        </Routes>  
+
         <Footer/>
       </Router>
     </div>

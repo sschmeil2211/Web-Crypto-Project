@@ -25,7 +25,7 @@
 }
 
 
-/* NavBar SECCION */
+/* NavBar SECTION */
 
 
 .navbar {
@@ -75,7 +75,7 @@
   border-radius: 10px;
 }
 
-/* Home SECCION */
+/* Home SECTION */
 
 
 .home-container{
@@ -175,9 +175,9 @@
   }
 }
 
-/* Carrousel SECCION */
+/* Carousel SECTION */
 
-.carrousel-container {
+.carousel-container {
   position: relative;
   margin-top: 100px;
   overflow: hidden; 
@@ -198,7 +198,7 @@
   border-radius: 50%;
 }
 
-.carrousel-upper-text {
+.carousel-upper-text {
   max-height: 360px;
   position: relative;
   padding: 10%;
@@ -239,7 +239,44 @@
   position: relative;
 }
 
-/* Resposive SECCION */
+/* About-us SECTION */
+
+.carousel{
+  margin-top: 150px;
+}
+.carousel-inner{
+  margin-bottom: 30px;
+}
+
+.carousel-item img {
+  border-radius: 15px; 
+  height: 500px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 9px; 
+  height: 9px;
+  position: relative;
+  bottom: -50px; 
+  display: flex;
+}
+
+.carousel-indicators [data-bs-target].active {
+  background-color: rgba(199, 38, 188, 1); /* Color del punto activo */
+}
+
+.carousel-control-prev {
+  left: 70px; 
+}
+
+.carousel-control-next {
+  right: 60px; 
+}
+
+
+/* Resposive SECTION */
 
 @media (max-width: 1700px) {
   
@@ -267,7 +304,7 @@
 }
 
 @media (max-width: 480px) {
-  .carrousel-upper-text {
+  .carousel-upper-text {
     padding: 5%;
   }
   .subtitle-container {

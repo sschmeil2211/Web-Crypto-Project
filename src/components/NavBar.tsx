@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import logo from '../assets/Images/logo.png'
+import { Link } from "react-router-dom";
 
 const NavBar: React.FC = () => {
 
@@ -10,9 +11,13 @@ const NavBar: React.FC = () => {
           <span className="title">Cripto Web</span>
         </div>
         <div className="nav-links">
-                <a href="#">Inicio</a>
+                <Link to="/">
+                  Inicio
+                </Link>
                 <a href="#">Tarjeta</a>
-                <a href="#">Nosotros</a>
+                <Link to="/about-us">
+                  Nosotros
+                </Link>
                 <a href="#">Dashboard</a>
                 <button className="button">Ingresar</button>
         </div>       

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import logo from '../assets/Images/logo.png'
 import { Link } from "react-router-dom";
 
@@ -14,7 +14,9 @@ const NavBar: React.FC = () => {
                 <Link to="/">
                   Inicio
                 </Link>
-                <a href="#">Tarjeta</a>
+                <Link to="/card">
+                  Tarjeta
+                </Link>
                 <Link to="/about-us">
                   Nosotros
                 </Link>
